@@ -9,10 +9,11 @@ class LinkedListProblem {
 		LinkedList<Integer> linkedlist = new LinkedList<Integer>();
 			
 		linkedlist.add(56);
-		linkedlist.addLast(30);
-		linkedlist.addLast(70);
+		linkedlist.add(70);
+		linkedlist.add(1, 30);
 
 		System.out.println(linkedlist);
+		//System.out.println(linkedlist.indexOf(70));
 		
 	}
 }
