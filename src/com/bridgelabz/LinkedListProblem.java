@@ -6,14 +6,13 @@ class LinkedListProblem {
 
 	public static void main(String[] args) {
 
-		LinkedList<Integer> list = new LinkedList<Integer>();
+		LinkedList<Integer> linkedlist = new LinkedList<Integer>();
 			
-		list.add(70);
-		list.add(0,30);
-		list.add(0,56);
+		linkedlist.add(56);
+		linkedlist.addLast(30);
+		linkedlist.addLast(70);
 
-		
-		System.out.println(list);
+		System.out.println(linkedlist);
 		
 	}
 }
