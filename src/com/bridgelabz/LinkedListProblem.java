@@ -11,9 +11,13 @@ class LinkedListProblem {
 		linkedlist.add(56);
 		linkedlist.add(70);
 		linkedlist.add(1, 30);
-
+		
 		System.out.println(linkedlist);
-		//System.out.println(linkedlist.indexOf(70));
+	 
+		linkedlist.remove();
+        
+		System.out.println("First element has been removed:");
+		System.out.println(linkedlist);
 		
 	}
 }
