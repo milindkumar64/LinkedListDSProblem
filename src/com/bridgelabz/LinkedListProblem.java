@@ -12,20 +12,22 @@ class LinkedListProblem {
 
 		linkedlist.add(56);
 		linkedlist.add(30);
+		linkedlist.add(40);
 		linkedlist.add(70);
-		
+
 		System.out.println(linkedlist);
 
 		ListIterator itr = linkedlist.listIterator();
-		
+
 		while (itr.hasNext()) {
 			Integer i = (Integer) itr.next();
-			if (i == 30)
-				{itr.add(40);
-				System.out.println("Got the Node with value 30 and adding Next Node 40");
-				}
+			if (i == 40) {
+				itr.remove();
+				System.out.println("Node 40 has been deleted From LinkedList");
+			}
 		}
 		System.out.println(linkedlist);
+		System.out.println("Existing LinkedList size is :"+linkedlist.size());
 
 	}
 }
