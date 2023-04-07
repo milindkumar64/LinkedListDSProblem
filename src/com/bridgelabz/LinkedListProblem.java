@@ -4,10 +4,6 @@ import java.util.*;
 
 class LinkedListProblem {
 
-	void popLast(LinkedList<Integer> linkedlist) {
-		linkedlist.pollLast();
-	}
-
 	public static void main(String[] args) {
 
 		LinkedListProblem linkedlistproblem = new LinkedListProblem();
@@ -18,11 +14,14 @@ class LinkedListProblem {
 		linkedlist.add(30);
 		linkedlist.add(70);
 
-		System.out.println(linkedlist);
 
-		linkedlistproblem.popLast(linkedlist);
-
-		System.out.println("First element has been removed:");
+		Iterator itr = linkedlist.iterator();
+		while(itr.hasNext())
+		{
+			Integer i = (Integer)itr.next();
+			if(i==30)
+		    System.out.println("Got the Node with value 30");
+		}
 		System.out.println(linkedlist);
 
 	}
